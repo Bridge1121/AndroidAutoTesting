@@ -11,9 +11,9 @@ def get_capabilities():
         "resetKeyboard": True,#测试结束后还原为系统默认输入法
         "newCommandTimeout": 6000,#如果 Appium 在这段时间内没收到新命令，就断开连接（默认60秒）
         "autoGrantPermissions": True,#自动授予应用权限（如相机、存储等），无需手动点确认
-        "skipUnlock": True,
-        # "unlockType": "pin",
-        # "unlockKey": "0000",
+        # "skipUnlock": True,
+        "unlockType": "pin",
+        "unlockKey": "0000",
         # "skipUnlock": True,#跳过自动解锁屏幕的步骤（默认会尝试滑动解锁）
         "skipDeviceInitialization": True,#跳过设备初始化（如输入法设置、权限设置），可提高启动速度
     }
